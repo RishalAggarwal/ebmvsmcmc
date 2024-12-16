@@ -115,8 +115,8 @@ In an iterative process (Figure for iDEM above), both methods begin by initializ
     <img 
         src="assets/img/2025-04-28-ebm-vs-mcmc/iefm.gif"
         alt="Target estimation for iEFM"
-        width="300"
-        style="width: 100%; max-width: 400px; height: auto; display: block;"
+        width="400"
+         style="width: 100%; max-width: 600px; height: auto; margin: 0 auto; display: block;"
     >
 </div>
 
