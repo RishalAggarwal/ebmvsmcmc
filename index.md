@@ -117,7 +117,7 @@ In an iterative process (Figure for iDEM above), both methods begin by initializ
     </div>
 </div>
 <div class="caption">
-    Estimation of regression targets in iEFM.
+    Target estimation procedure in iEFM. At the start of training, randomly initialized samples are draw from the replay buffer. Then samples $x_t$ are draw from $P_{t}(x \mid x_{1} )$. Using $x_{t}$, a Gaussian mean $\mu_{\text{MC}}$ is calculated to draw Monte Carlo samples for the estimation of a Boltzmann weighted average of $x_{1}$. This Monte Carlo estimate, denoted as $\tilde{x}_1$, will then be used to define the target flow matching vector field that the model is trained on. Upon completion of this inner loop training procedure, the model then generates new samples to replenish the buffer in the outer loop. TThis process iterates until the model converges to the target distribution.
 </div>
 
 Developers of both methods, as well as others, have gravitated toward a standard set of toy systems for evaluation and benchmarking. While these systems are useful for early-stage development and illustrative purposes, we caution against over-reliance on them for robust benchmarking. As we will demonstrate, many related works employ MCMC samples of the equilibrium distribution but fail to use MCMC as a meaningful benchmark. In fact, MCMC often produces superior samples with faster runtimes on these systems compared to the proposed methods. Additionally, we show that the metrics commonly used for evaluation are poorly aligned with actual sample quality, further undermining their utility in assessing these methods.
