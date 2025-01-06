@@ -74,7 +74,7 @@ AI for structural biology has a big-data problem. Simply put, there is a lack of
 
 Molecular dynamics (MD) simulations can sample the conformational dynamics of molecular systems, but are constrained by sampling inefficiencies and the need for prohibitively long timescales. Addressing these limitations is essential to designing drugs that effectively modulate a protein's function. Luckily, for physical systems such as molecules we have access to more information than just data to train generative models:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">What if there was a thing called energy ? ;-)</p>&mdash; Adrian Roitberg 🏳️‍⚧️ (@adrian_roitberg) <a href="https://twitter.com/adrian_roitberg/status/1793676191620018398?ref_src=twsrc%5Etfw">May 23, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">What if there was a thing called energy ? ;-)</p>&mdash; Adrian Roitberg 🏳️‍⚧️ (@adrian_roitberg) <a href="https://twitter.com/adrian_roitberg/status/1793676191620018398?ref_src=twsrc%5Etfw">May 23, 2024</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Yes that’s right, we know that for physical systems (molecules), the distribution of states (conformers) are characterized by their energy according the boltzmann distribution $$p(x) \propto exp(-\beta (\mathcal{E}(x)))$$, where $$\mathcal{E}(x)$$ is the energy of the state and $$\beta$$ is a constant dependant on temperature. This motivates a paradigm of training generative models that can take advantage of the energy function. 
 
